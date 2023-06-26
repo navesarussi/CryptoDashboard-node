@@ -12,6 +12,10 @@ const auth = require('./middlewares/auth');
 const notFound = require('./middlewares/404');
 const error = require('./middlewares/error');
 
+const config = require('config');
+
+console.log(config.get('app.name'));
+console.log(config.get('app.secret'));
 
 app.use(auth);
 

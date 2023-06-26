@@ -1,0 +1,23 @@
+{
+    "app": {
+        "host":"localhost",
+        "name": "my dev app",
+        "secret": "not really a secret"
+    },
+    "github": { 
+        "clientld": "",
+        "secret": ""
+    },
+    "mysql": {
+        "host":"",
+        "user":"",
+        "password":"",
+        "database":"",
+        "port":""
+    },
+    "mongo": {
+        "host":"",
+        "port":"",
+        "db":""
+    }
+}
