@@ -3,6 +3,8 @@ router = express.Router();
 
 const welcome = require('.././middlewares/welcome');
 
-router.get('/welcome', welcome);
+
+//router.use('/',welcome );
+router.use('/welcome', welcome);
 
 module.exports = router;
