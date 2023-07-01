@@ -5,7 +5,7 @@ const router = express.Router();
 //const callback = require('.././middlewares/callback');
 const passport = require('../middlewares/auth');
 
-
+console.log('in github  router');
 
 router.get('/', passport.authenticate('github', { scope: [ 'user:email' ] })); 
 router.get('/callback', passport.authenticate('github', { failureRedirect: '/welcome', successRedirect: '/dashboard' }))

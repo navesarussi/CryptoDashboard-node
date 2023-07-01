@@ -39,7 +39,17 @@ const util = require('util');
         primary key (id)
       )  
      `);
+     console.log('created usres table')
 
-    console.log('created users_symbols'); 
+
+     await connection.query(`
+     CREATE TABLE IF NOT EXISTS symbolvalues (
+         symbol varchar(3) not null,
+         value int not null,
+         created_at timestamp not null
+       )  
+     `);
+
+     console.log('created symbolvalues table'); 
     process.exit()
 })();
