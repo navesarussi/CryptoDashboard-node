@@ -20,7 +20,13 @@ class UserSymbol {
             userId,
         ]);    
     };
-    
+    // async findSymbolsByUserId ({userId}) {
+    //     return this.db.execute(`
+    //         select * from users_symbols where user_id = ?
+    //     `,[
+    //         userId,
+    //     ]);    
+    // };
 }
 
 

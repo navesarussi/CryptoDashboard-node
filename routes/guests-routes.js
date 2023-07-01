@@ -1,8 +1,11 @@
 const express = require('express');
 router = express.Router();
 
-const welcome = require('.././middlewares/welcome');
+const welcome = require('../middlewares/welcome');
+const enforceGuest = require('../middlewares/enforce-guests');
+console.log('Welcome');
 
-router.get('/welcome', welcome);
+//router.use('/',enforceGuest,welcome );
+router.use('/welcome',enforceGuest, welcome);
 
 module.exports = router;
