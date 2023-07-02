@@ -47,7 +47,7 @@ app.use(session({
 app.get('/', (req, res) => {
    res.render('dashboard');
 });
-
+console.log("in app: ");
 app.use(auth.initialize());
 app.use(auth.session());
 app.use(db);

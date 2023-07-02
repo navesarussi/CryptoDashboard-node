@@ -22,6 +22,7 @@ pool.execute = util.promisify(pool.execute);
 
 const middleware = (req, res, next) => {
     req.db = pool;
+    console.log("connect  mysql",req.db.mysql.database);
     return next();
 };
 
